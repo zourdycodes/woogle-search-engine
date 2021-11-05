@@ -18,7 +18,7 @@ export const StateProvider = ({ children }: Props) => {
   const [error, setError] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [results, setResults] = useState<ResponseData>();
-  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [searchTerm, setSearchTerm] = useState<string>("Elon Musk");
 
   const fetchResults = useCallback(async (path: string) => {
     try {
