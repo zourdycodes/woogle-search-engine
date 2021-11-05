@@ -14,6 +14,7 @@ export const Links = () => (
       <NavLink
         to={url}
         activeClassName="text-blue-700 border-b-2 dark:text-blue-300 border-blue-700 pb-2"
+        key={url}
       >
         {text}
       </NavLink>
